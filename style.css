@@ -6,7 +6,7 @@
 .heading{
 	height:100px;
 	background:grey;
-	padding:100px;
+	padding:150px;
 	text-align:center;
 }
 .navigation{
@@ -31,5 +31,5 @@
 	height:40px;
 	color:white;
 	text-align:center;
-	padding:10px;
+	padding:150px;
 }
