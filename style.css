@@ -10,26 +10,16 @@
 	text-align:center;
 }
 .navigation{
-	height:50px;
+	height:35px;
 	background:lightgrey;
 }
 .content{
-	min-height:400px;
+	height:750px;
 	background:#61666b;
-	width:400px;
-	float:left;
+	width:600px;
 }
 .sidebar{
 	width:200px;
 	float:right;
 	background:#ff9900;
 	min-height:400px;
-}
-.footer{
-	clear:both;
-	background:black;
-	height:50px;
-	color:white;
-	text-align:center;
-	padding:160px;
-}
