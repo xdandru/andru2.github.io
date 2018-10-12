@@ -1,0 +1,36 @@
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta property="og:type" content='website'/>
+        <meta property="og:title" content="Andru's Website"/>
+        <meta property="og:description" content="Home page of my site!"/>
+        <meta property="og:url" content="https://xdandru.github.io"/>
+        <meta property="og:image" content="https://cdn.discordapp.com/avatars/213018710212870154/a_84cf6dc864da9c77c3ce66ffec5d6c5b.png?size=1024"/>
+        <link rel="stylesheet" href="style.css" />
+        <title>Andru's site</title>
+        <link rel="shortcut icon" href="/static/favicon.ICO">
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="heading">
+        <h1>Andru's Site</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a><li>
+                <li><a href="Info.html">Info</a><li>
+                <li><a href="Videos.html">Videos</a><li>
+                <li><a href="Secret.html">SECRET</a><li>
+                <li><a href="suggestion.html">Feedbacks (CURRENT)</a></li>
+            </ul>
+        </nav>	
+        </div>
+        <img src="avatar.png" class="avatar">
+        <div class="content"> 
+            <!--- Might be vulnurable to XSSes and CSRFs, might need to find a way to escape the content -->
+            <h2>Submit your suggestions here!</h2><br>
+            <form action="https://chanonlim.pythonanywhere.com/api/private/comment-for-xdandru" method="POST" enctype="application/x-www-form-urlencoded">
+                <input type="text" name="form" required="required" size="50">
+                <input type="submit" value="Submit!">
+            </form>
+        </div>
+    </body>
+</html>
