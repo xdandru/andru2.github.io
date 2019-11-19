@@ -1,5 +1,19 @@
 <html prefix="og: http://ogp.me/ns#">
 <head>
+<script>
+function clickCounter() {
+	if (typeof(Storage) !== "undefined") {
+		if (localStorage.clickcount) {
+			localStorage.clickcount = Number(localStorage.clickcount)+1;
+		   } else {
+			localStorage.clickcount = 1;
+		   }
+			 document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+		   } else {
+			 document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+	}
+}
+</script>
 <title style="text-align:center;">Andru's Site</title>
 <meta property="og:type" content='website'/>
 <meta property="og:title" content="Andru's Website"/>
@@ -21,6 +35,10 @@
 	<img src="avatar.png" alt="avatar" style="display: block; margin-left: auto; margin-right: auto;">
 	<div class="content" style="padding:1rem">
 	<h2 style="text-align:center;">Welcome to my site!:This is site ran by me !xd andru#2306 and Github,This is a site where I will post random stuff including HTML and more!,Click on one of the links to be transported to the destinated page. - Andru</h2>
+	<p style="text-align: center;"><button onclick="clickCounter()" type="button">Click me!</button></p>
+	<div style="text-align: center;" id="result"></div>
+	<h2 style="text-align: center;">Click the button to see the counter increase.</h2>
+	<h2 style="text-align: center;">Close the browser tab(or window), and try again, and the counter will continue to count (is not reset).</h2>
 	</div>
 </body>
 </html>
